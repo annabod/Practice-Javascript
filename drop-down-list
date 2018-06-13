@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			.hidden-ul-style {
+				display: none;
+			}
+			.block-ul-style {
+				display: block;
+			}
+		</style>
+	</head>
+<body>
+		<h1 onclick="hiddenul()">Click Me!</h1>
+		<ul class="main-object" id="hidden-ul-id">
+			<li>First</li>
+			<li>Second</li>
+			<li>Third</li>
+		</ul>
+		<script type="text/javascript">
+			  function hiddenul() {
+				  var elementclassname = document.getElementById("hidden-ul-id").className;
+				  if (elementclassname == "main-object") {
+					  document.getElementById("hidden-ul-id").className="hidden-ul-style";
+          } else if (elementclassname == "hidden-ul-style") {
+					  document.getElementById("hidden-ul-id").className="block-ul-style";
+          } else if (elementclassname == "block-ul-style") {
+					  document.getElementById("hidden-ul-id").className="hidden-ul-style";
+				  }
+			  }
+		</script>
+</body>
+</html>
