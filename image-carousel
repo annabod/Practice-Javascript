@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			.images {
+				width: 300px;
+				height: 200px;
+				overflow: hidden;
+				float: left;
+			}
+			.img1 {
+				float: left;
+			}
+			.img2 {
+				float: left;
+			}
+			#align-img {
+				width: 600px;
+			}
+			.rightbutton {
+				float: left;
+				margin-top: 90px;
+			}
+			.leftbutton {
+				float: left;
+				margin-top: 90px;
+			}
+			.click-button-left {
+				margin-left: -300px;
+			}
+			.click-button-right {
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+<body>
+	<div class="leftbutton" onclick=clickbutton2()>
+			<input type="button" value="<">
+	</div>
+	<div class="images">
+		<div class="align-img" id="align-img">
+			<img class="img1" src="1.jpeg" width="300">
+			<img class="img2" src="2.jpg" width="300">
+		</div>
+	</div>
+	<div class="rightbutton" onclick=clickbutton1()>
+			<input type="button" value=">">
+	</div>
+	<script type="text/javascript">
+		function clickbutton1() {
+			document.getElementById("align-img").className = "click-button-left";
+		}
+		function clickbutton2() {
+			document.getElementById("align-img").className = "click-button-right";
+		}
+	</script>
+
+</body>
+</html>
