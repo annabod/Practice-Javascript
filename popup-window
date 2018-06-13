@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			.showcss {
+				display: none;
+			}
+			.openblock {
+				display: block;
+			}
+			#showdiv {
+				top: 100px;
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background: grey;
+				color: white;
+				left: 500px;
+				text-align: center;
+			}
+			#closebtn {
+				float: right;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+<body>
+		<div class="showcss" id="showdiv">
+			Hi, Alex!
+			<div class="closebtn" id="closebtn" onclick="closebtn()">X</div>
+		</div>
+		
+		<input type="button" value="click me" id="click" onclick="clickbutton()">
+		
+		<script type="text/javascript">
+			function clickbutton() {
+				var show = document.getElementById("showdiv");
+				//show.classList.toggle("showcss");
+				show.className = "openblock";
+			}
+			
+			function closebtn() {
+				var closebtnn = document.getElementById("showdiv");
+				closebtnn.className = "showcss";
+			}
+		</script>
+</body>
+</html>
+
