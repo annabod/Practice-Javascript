@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			
+		</style>
+	</head>
+<body>
+		<script type="text/javascript">
+			 var array0 = [1, 2, 3, 4, 5];
+			 var array1 = [2, 3, 4, 5, 6];
+			 var array2 = [3, 4, 5, 6, 7];
+			 var array3 = [4, 5, 6, 7, 8];
+			 var array4 = [5, 6, 7, 8, 9];
+			 
+			 var arraymain = [array0, array1, array2, array3, array4];
+			 document.write('<div style="width: 70px;">');
+			 for (i=0; i<5; i++) {
+				if (i % 2 == 0) {
+					for (j=0; j<5; j++) {
+						document.write(arraymain[i][j]);
+						document.write(" ");
+					}
+				} else {
+					for (j=4; j>=0; j--) {
+						document.write('<div style="float: right;">' + arraymain[i][j] + "</div>");
+						document.write(" ");
+					}
+				}
+				document.write("</br>");
+			 }
+			 document.write('</div>');
+		</script>
+</body>
+</html>
+
